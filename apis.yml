@@ -1,7 +1,26 @@
 aid: caper
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/caper.png
 name: Caper
-description: Caper is a company surfaced as a portfolio company of y-combinator and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Caper (caper.ai) is a New York-founded computer-vision company that builds AI-powered smart
+  shopping carts and cashierless checkout technology for grocery and retail. Its Caper Cart uses
+  a set of onboard cameras and deep-learning object recognition, running on NVIDIA Jetson edge AI,
+  to auto-detect items as shoppers add them and let customers skip the checkout line. Founded in
+  2016 (Y Combinator) by Lindon Gao and team, Caper was acquired by Instacart in 2021 for roughly
+  $350M and now operates as part of the Instacart Enterprise Platform (Connected Stores), deployed
+  with retailers including ALDI and Coles. Caper ships retail hardware and an internal edge/vision
+  platform; it does not publish a public developer API, OpenAPI, SDKs, or a developer portal.
 url: https://raw.githubusercontent.com/api-evangelist/caper/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,12 +28,34 @@ x-backed-by:
 - y-combinator
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-enrichment:
+  last_run: '2026-07-18'
+  status: no-public-api
+  note: Physical smart-cart / cashierless-checkout hardware company, now Instacart Enterprise
+    Platform. Searched caper.ai, developer/api/docs subdomains, and the CaperAi GitHub org; no
+    public API surface, OpenAPI, SDKs, packages, or webhooks found. developer.caper.ai and
+    api.caper.ai do not resolve; docs.caper.ai returns 401 (auth-walled, non-public).
+x-acquired-by: instacart
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Retail
+- Grocery
+- Computer Vision
+- Smart Cart
+- Cashierless Checkout
+- Edge AI
+- Instacart
 apis: []
+common:
+- type: Website
+  url: https://www.caper.ai/
+- type: Blog
+  url: https://www.caper.ai/blog
+- type: GitHubOrganization
+  url: https://github.com/CaperAi
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
