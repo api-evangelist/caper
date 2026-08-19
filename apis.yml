@@ -36,7 +36,7 @@ x-enrichment:
     public API surface, OpenAPI, SDKs, packages, or webhooks found. developer.caper.ai and
     api.caper.ai do not resolve; docs.caper.ai returns 401 (auth-walled, non-public).
 x-acquired-by: instacart
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-18'
 tags:
